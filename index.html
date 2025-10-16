@@ -27,7 +27,14 @@ collect_inputs() {
   echo "  📧 Git Email       : $GIT_EMAIL"
   echo
 
-  read -p "Are these correct? Please confirm (y/n): " CONFIRM
+  if [[ -t 0 ]]; then
+    # stdin is a terminal → normal read
+    read -p "Are these correct? Please confirm (y/n): " CONFIRM
+  else
+    # stdin is a pipe (e.g. curl | bash) → force read from /dev/tty
+    read -p "Are these correct? Please confirm (y/n): " CONFIRM </dev/tty
+  fi
+
   echo
 }
 
@@ -37,7 +44,7 @@ while true; do
   if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
     break
   else
-    echo "Let's try again..."
+    echo "Try again..."
     echo
   fi
 done
