@@ -1,4 +1,4 @@
-# 🚀 GitHub Codespace Environment Setup
+# GitHub Codespace Environment Setup 🚀
 
 <p align="center">
  <img height="230" src="https://codespace.hatixntsoa.site/images/codespace.png" alt="GitHub Codespace Setup Logo"/>
@@ -76,19 +76,16 @@ Once complete, the script will:
 
 ## How It Works 🔧
 
-The main entry point (`index.html`) behaves intelligently based on how it’s accessed:
+The startup script (`index.html`) performs the following actions:
 
-| Access Method       | Behavior                                                    |
-| ------------------- | ----------------------------------------------------------- |
-| **Browser**         | Displays a clean info page explaining how to use the script |
-| **Terminal (curl)** | Executes startup scripts automatically                      |
+1. **Fetches and runs `setup.timezone.sh`**
 
-It runs two core setup scripts:
+   * Applies your timezone based on offset input (e.g., `Etc/GMT-3`).
+2. **Fetches and runs `setup.git.creds.sh`**
 
-1. **`setup.timezone.sh`** – Configures the system timezone from user input
-2. **`setup.git.creds.sh`** – Applies `git config` for username and email
+   * Configures `user.name` and `user.email` for Git locally in the Codespace.
 
-You can view or test the raw served version here:
+You can view the raw script here:
 👉 [https://codespace.hatixntsoa.site](https://codespace.hatixntsoa.site)
 
 <br>
