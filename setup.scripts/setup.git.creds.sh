@@ -17,9 +17,14 @@ if [[ -z "$GIT_NAME" || -z "$GIT_EMAIL" ]]; then
   fi
 fi
 
-echo "⚙️ Setting Git config..."
+echo -n "⚙️ Setting Git config... "
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
+echo "✔ Done"
 
-echo "✅ Git identity set to:"
-git config --global --list | grep 'user\.'
+# Show summary inline
+USER_NAME=$(git config --global user.name)
+USER_EMAIL=$(git config --global user.email)
+echo "✅ Git identity set to: $USER_NAME <$USER_EMAIL>"
+echo
+
