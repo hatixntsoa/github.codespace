@@ -40,10 +40,10 @@ while true; do
 done
 
 # Run timezone setup
-curl -sL "$SETUP_BASE_URL/setup.timezone.sh" | bash -s -- "$TZ_OFFSET"
+curl -sL "$SETUP_BASE_URL/timezone.sh" | bash -s -- "$TZ_OFFSET"
 
 # Run git credentials setup
-curl -sL "$SETUP_BASE_URL/setup.git.creds.sh" | bash -s -- "$GIT_NAME" "$GIT_EMAIL"
+curl -sL "$SETUP_BASE_URL/git.creds.sh" | bash -s -- "$GIT_NAME" "$GIT_EMAIL"
 
 echo
 echo "🎉 Codespace environment initialized successfully!"
