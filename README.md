@@ -62,9 +62,9 @@ Once complete, the script will:
 
 ```
 .
-├── setup.scripts/
-│   ├── setup.git.creds.sh       # Sets up Git username and email
-│   ├── setup.timezone.sh        # Configures system timezone
+├── setup/
+│   ├── git.creds.sh       # Sets up Git username and email
+│   ├── timezone.sh        # Configures system timezone
 │   └── startup.sh               # Main startup script (alias: index.html)
 ├── CNAME                        # Custom domain for GitHub Pages
 ├── index.html                   # Serves bash or web content depending on context
@@ -78,10 +78,10 @@ Once complete, the script will:
 
 The startup script (`index.html`) performs the following actions:
 
-1. **Fetches and runs `setup.timezone.sh`**
+1. **Fetches and runs `timezone.sh`**
 
    * Applies your timezone based on offset input (e.g., `Etc/GMT-3`).
-2. **Fetches and runs `setup.git.creds.sh`**
+2. **Fetches and runs `git.creds.sh`**
 
    * Configures `user.name` and `user.email` for Git locally in the Codespace.
 
@@ -94,16 +94,16 @@ You can view the raw script here:
 
 This project is hosted via **GitHub Pages** with a [custom domain](https://codespace.hatixntsoa.site).
 
-All scripts inside the `setup.scripts/` directory are public and accessible at:
+All scripts inside the `setup/` directory are public and accessible at:
 
 ```
-https://codespace.hatixntsoa.site/setup.scripts/<script-name>
+https://codespace.hatixntsoa.site/setup/<script-name>
 ```
 
 **Examples:**
 
-* [setup.git.creds.sh](https://codespace.hatixntsoa.site/setup.scripts/setup.git.creds.sh)
-* [setup.timezone.sh](https://codespace.hatixntsoa.site/setup.scripts/setup.timezone.sh)
+* [git.creds.sh](https://codespace.hatixntsoa.site/setup/git.creds.sh)
+* [timezone.sh](https://codespace.hatixntsoa.site/setup/timezone.sh)
 
 <br>
 

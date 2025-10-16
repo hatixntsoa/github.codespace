@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-BASE_URL="codespace.hatixntsoa.site/setup.scripts"
+BASE_URL="codespace.hatixntsoa.site/setup"
 
 echo "🚀 Running Codespace startup setup..."
 echo
