@@ -27,12 +27,12 @@ It helps you quickly set your **timezone** and **Git credentials** on every new 
 
 ### Contents
 
-[Quick Start](#quick-start) |
-[Screenshot](#screenshot) |
-[Project Structure](#project-structure) |
-[How It Works](#how-it-works) |
-[Deployment](#deployment) |
-[License](#license)
+[Quick Start](#quick-start-⚡) |
+[Screenshot](#screenshot-📸) |
+[Project Structure](#project-structure-📦) |
+[How It Works](#how-it-works-🔧) |
+[Deployment](#deployment-🌐) |
+[License](#license-🛡)
 
 </div>
 
@@ -59,7 +59,7 @@ Once complete, the script will:
 
 <br>
 
-## Screenshot
+## Screenshot 📸
 
 <p align="center">
  <img src="https://codespace.hatixntsoa.site/images/screenshot.png" width="100%" alt="Gemini Chat TUI running in terminal"/>
