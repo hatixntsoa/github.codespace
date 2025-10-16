@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 set -e
 
+UTILS_BASE_URL="codespace.hatixntsoa.site/utils"
+
+# Importing the input function
+source <(curl -sSL "https://$UTILS_BASE_URL/input.sh")
+
 # Check if an argument is provided
 TIMEZONE_OFFSET=$1
 
 if [[ -z "$TIMEZONE_OFFSET" ]]; then
-  if [[ -t 0 ]]; then
-    # stdin is a terminal → direct execution
-    read -p "Enter timezone offset (e.g. 3 for GMT-3): " TIMEZONE_OFFSET
-  else
-    # stdin is not a terminal (e.g. curl | bash) → use /dev/tty
-    read -p "Enter timezone offset (e.g. 3 for GMT-3): " TIMEZONE_OFFSET </dev/tty
-  fi
+  input "Enter timezone offset (e.g. 3 for GMT-3): " TIMEZONE_OFFSET
 fi
 
 ZONE="Etc/GMT-$TIMEZONE_OFFSET"
