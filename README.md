@@ -27,12 +27,12 @@ It helps you quickly set your **timezone** and **Git credentials** on every new 
 
 ### Contents
 
-[Quick Start](#quick-start-⚡) |
-[Screenshot](#screenshot-📸) |
-[Project Structure](#project-structure-📦) |
-[How It Works](#how-it-works-🔧) |
-[Deployment](#deployment-🌐) |
-[License](#license-🛡)
+[Quick Start](#quick-start-%E2%9A%A1) |
+[Screenshot](#screenshot-%F0%9F%93%B8) |
+[Project Structure](#project-structure-%F0%9F%93%A6) |
+[How It Works](#how-it-works-%F0%9F%94%A7) |
+[Deployment](#deployment-%F0%9F%8C%90) |
+[License](#license-%F0%9F%9B%A1)
 
 </div>
 
