@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-BASE_URL="https://raw.githubusercontent.com/hatixntsoa/github.codespaces/master/setup.scripts"
+BASE_URL="codespace.hatixntsoa.site/setup.scripts"
 
 echo "🚀 Running Codespace startup setup..."
 
@@ -29,4 +29,3 @@ curl -sL "$BASE_URL/setup.timezone.sh" | bash -s -- "$TZ_OFFSET"
 curl -sL "$BASE_URL/setup.git.creds.sh" | bash -s -- "$GIT_NAME" "$GIT_EMAIL"
 
 echo "🎉 Codespace environment initialized successfully!"
-
