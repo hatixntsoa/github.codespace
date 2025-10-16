@@ -1,4 +1,4 @@
-# GitHub Codespace Environment Setup 🚀
+# GitHub Codespace 🚀
 
 <p align="center">
  <img height="230" src="https://codespace.hatixntsoa.site/images/codespace.png" alt="GitHub Codespace Setup Logo"/>
@@ -8,7 +8,7 @@
 
 <p>
 
-`codespace.setup` is an automated startup script that instantly configures your **GitHub Codespace environment** — no manual setup required.  
+`github.codespace` is a project aiming to automate startup script that instantly configures your **GitHub Codespace environment** — no manual setup required.
 It helps you quickly set your **timezone** and **Git credentials** on every new session in just one command.
 
 </p>
@@ -28,6 +28,7 @@ It helps you quickly set your **timezone** and **Git credentials** on every new 
 ### Contents
 
 [Quick Start](#quick-start) |
+[Screenshot](#screenshot) |
 [Project Structure](#project-structure) |
 [How It Works](#how-it-works) |
 [Deployment](#deployment) |
@@ -55,6 +56,18 @@ Once complete, the script will:
 
 * Set your system’s timezone accordingly
 * Configure your Git credentials locally within the Codespace
+
+<br>
+
+## Screenshot
+
+<p align="center">
+ <img src="https://codespace.hatixntsoa.site/images/screenshot.png" width="100%" alt="Gemini Chat TUI running in terminal"/>
+</p>
+
+<p align="center">
+ <em>Example: Script Execution inside a GitHub Codespace Terminal session.</em>
+</p>
 
 <br>
 
