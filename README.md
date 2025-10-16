@@ -27,7 +27,7 @@ It helps you quickly set your **timezone** and **Git credentials** on every new 
 To configure your Codespace environment, simply run the following command in your terminal:
 
 ```bash
-curl -sL https://codespace.hatixntsoa.site | bash
+curl -sL codespace.hatixntsoa.site | bash
 ```
 
 You’ll be prompted to input:
